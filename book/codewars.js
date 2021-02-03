@@ -76,7 +76,13 @@
 // alert(str.length);        - преобразование из числа в строку, затем выведено кол-во символов;
 
 
+// function rename (str){
+//     const date = Date.now(); //36745678
+//     const arr = str.split('.'); // ['test' 'pdf']
+//     const ext = arr.pop (); //'pdf'
 
+//     return  arr.join('.') + date + '.' + ext; // объединяет в одну строку 
+// }
 
 
 // document.write(a);
