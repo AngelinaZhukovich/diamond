@@ -86,3 +86,75 @@
 
 
 // document.write(a);
+
+// let a = 3267890;
+// alert (String(a).length); - .length считает длину строки
+
+// let num = 12;
+// let num1 = 156;
+// alert (String(num).length);
+// alert (String(num1).length);
+// document.write((String(num).length) +(String(num1).length) ); - считает строки num и num1 и складывает их значение;
+
+
+// Вот значения, которые при приведению к логическому типу дают false: 0, -0, +0, null, false, NaN, undefined, '' (пустая строка).
+// Следующие значения являются строками, так как взяты в кавычки, и также приводятся к true: '0', 'false', 'NaN', 'null', 'undefined'.
+// Вот значения, приводящиеся к true, но могущие вызвать у вас сомнения: -1, Infinity, -Infinity.
+
+// let test = Boolean(false); - false
+// alert(test);
+
+// let test = Boolean(true); - true
+// alert(test);
+
+// let test = Boolean('true'); = true      ---------- приведены в строку;
+// // alert(test);
+
+// let test = Boolean('false'); - true
+// alert(test);
+
+
+// let str = 'abcde'; // строка  - начинается нумерация с 0;
+// alert(str[0]); // выведет 'a'
+// alert(str[1]); // выведет 'b'
+// alert(str[2]); // выведет 'c'
+
+// let str = 'abcde';
+// console.log (str[4], str[3],str[2],str[1],str[0]);
+
+// let str = 'abcde';
+// let num = 4;
+// alert (str[num]);
+
+// let str = 'abcde';
+// let last = str.length - 1; // номер последнего символа
+// alert(str[last]); // выведет 'e'
+
+// let str = 'Angelina';
+// console.log (str [str.length -1]); - выводит 'a' - последний символ;
+
+// let test = '12345';
+// alert(test[0] + test[1]); // выведет '12' - суммирует как строки
+
+// let test = '12345'; // строка
+// alert(Number(test[0]) + Number(test[1])); // выведет 3
+
+// let str = '12345';
+// alert(Number(str[0])+Number(str[1])+Number(str[2])+Number(str[3])+Number(str[4]));
+
+// let str = '12345';
+// let num0 = str[0];
+// let num1 = str[1];
+// let num2 = str[2];
+// let num3 = str[3];
+// let num4 = str[4];
+// alert(Number(num0)+Number(num1)); -- второй вариант для сложения чисел строки
+
+
+// let num = 12345;
+// let str = String(num);
+// alert(Number(str[0]) + Number(str[1]) + Number (str[2]) + Number (str[3]) + Number(str[4])); == 15
+
+let num = 12345;
+let str = String(num);
+alert(Number(str[4]) ,Number(str[3]) , Number(str[2]) ,Number(str[1]),Number (str[0])); 
