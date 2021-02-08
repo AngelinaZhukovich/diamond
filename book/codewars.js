@@ -1,3 +1,7 @@
+
+
+
+
 // let name  = 'Angelina';  - создание строки;
 // alert('Hello, ' + name);
 
@@ -155,6 +159,6 @@
 // let str = String(num);
 // alert(Number(str[0]) + Number(str[1]) + Number (str[2]) + Number (str[3]) + Number(str[4])); == 15
 
-let num = 12345;
-let str = String(num);
-alert(Number(str[4]) ,Number(str[3]) , Number(str[2]) ,Number(str[1]),Number (str[0])); 
+// let num = 12345;
+// let str = String(num);
+// alert(Number(str[4]) ,Number(str[3]) , Number(str[2]) ,Number(str[1]),Number (str[0])); 
