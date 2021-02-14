@@ -157,8 +157,104 @@
 
 // let num = 12345;
 // let str = String(num);
-// alert(Number(str[0]) + Number(str[1]) + Number (str[2]) + Number (str[3]) + Number(str[4])); == 15
+// alert(Number(str[0]) + Number(str[1]) + Number (str[2]) + Number (str[3]) + Number(str[4])); //== 15 переводим в Nomber, чтоб значения строк проссумировались
 
 // let num = 12345;
 // let str = String(num);
-// alert(Number(str[4]) ,Number(str[3]) , Number(str[2]) ,Number(str[1]),Number (str[0])); 
+// alert(str[4] + str[3]+ str[2]+str[1]+str[0]); == 54321 если перевести в строку, то суммируется как строки (на строки распрост только * и / );
+
+// let num = 12345;
+// let str = String(num);
+// alert(str[0] * str[1] * str[2] * str[3] * str[4]); - при умножении переводить в nomber нет смысла;
+
+// let str = 'abcde'; 
+// str[0] = '!';       - строки в JS не изменяемые;
+
+// let num = 1;
+// num += 3; // этот код полностью эквивалентен коду num = num + 3;
+// alert(num);
+
+// let num = 2;
+// num /= 3;
+// alert(num);
+
+
+// let num = 47;
+// num = num + 7;
+// num = num - 18;
+// num = num * 10;
+// num = num / 15;
+// alert(num);
+// сокращенный вариант:
+// let num = 47;
+// num += 7;
+// num -= 18;
+// num *= 10;
+// num /= 15;
+// // alert(num);
+
+
+// let num = 10;
+// num = num + 1;
+// num = num + 1;
+// num = num - 1;
+// alert(num);        // сокращенный вариант:
+// let num =10;
+// num++;
+// num++;
+// num--;
+// alert (num);
+
+// let num1 = 3;
+// let num2 = num1++;
+// alert(num1);
+// alert(num2);               // выводит 4 потом 3
+
+// let num1 = 3;
+// let num2 = --num1;
+// alert(num1);
+// alert(num2);                 // выводит 2 потом 2
+
+// let num1 = 3;
+// let num2 = num1--;
+// alert(num1);
+// alert(num2);                    // вывод 2 потом 3
+
+// let num1 = 3; // присвоено 3
+// num1++;         // нет разницы до или после ++ все равно увеличит на 1 и = 4
+// let num2 = num1--; // в num2 запишет 4, в num1 уменшит на 1 и = 3
+// alert(num1++); // значение записывает, а увеличивает только после alert. т.е. будет 3
+// alert(--num2);  //уменьшает на 1 сразу 4-1 =3     
+// выводит 3 потом 3
+
+// prompt('Ваше имя?'); // всплывающее окно с графой для ввода текста
+
+// let name = prompt('Ваше имя?');
+// alert('Ваше имя: ' + name);      
+
+// Сокращенный вариант (без присваивания переменной):
+// alert('Ваше имя: ' + prompt('Ваше имя?')); // если не присвоить переменную, то в Консоли не сохранятся данные.
+
+// let Surname = prompt ('Ваша Фамилия');
+// alert ('Ваша фамилия: ' + Surname);
+
+// let num1 = prompt('Введите первое число');
+// let num2 = prompt('Введите второе число');
+// alert (Number (num1) + Number (num2)); // сложит числа как строки, но если добавить Number, то переведет в числа;(в консоли все равно как строки записывается)
+
+
+// let S = prompt ('Введи сторону квадрата');
+// alert ('Площадь квадрата равна: ' + S*S); т.к. умножение со строками работает без number, то переводить строку в число нет смысла;
+
+// let length = prompt ('Введи длину прямоуголика:');
+// let width = prompt ('Введи ширину прямоуголика:');
+// alert ('Периметр введенного прямоугольника равен: ' + Number ( length*2 + width*2)); //умножение выполняется первым,для сложения нужен Number, т.к. prompt(строчный элемент);
+
+// let arr = ['a', 'b', 'c'];
+// alert(arr);
+// console.log (arr);
+
+let arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+console.log(arr[0]); // выведет 'пн'
+console.log(arr[1]); // выведет 'вт'
+console.log(arr[2]); // выведет 'ср'
