@@ -372,3 +372,5 @@
 
 // let obj = {'1a':1, '2b':2, 'c-c': 3};
 // alert (Number(obj['1a'])+ Number(obj['2b'])+Number(obj['c-c'])); // равно 6
+// let obj = {'1a':1, '2b':2, 'c-c': 3};
+// alert (obj['1a']+ obj['2b']+obj['c-c']);
