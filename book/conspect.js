@@ -374,3 +374,73 @@
 // alert (Number(obj['1a'])+ Number(obj['2b'])+Number(obj['c-c'])); // равно 6
 // let obj = {'1a':1, '2b':2, 'c-c': 3};
 // alert (obj['1a']+ obj['2b']+obj['c-c']);
+
+// function highAndLow(numbers){
+//     num = numbers.split(' ');
+//     var max =parseInt(num);
+//     var min =parseInt(num);
+
+//     if (num.length = 1) {
+//         return(max + " " + min);
+//       }
+
+//       else {
+//               for (i=0;i<num.length;i++) {
+//                 if (parseInt(num[i])>max) {
+//                     max = parseInt(num[i]);
+//                 }
+//                 else if (parseInt(num[i])<min) {
+//                     min = parseInt(num[i]);
+//                 }
+//                 else if (max ==min){
+
+//                 }
+//               }
+//             }
+//             return(max + " " + min);
+// }-----------------------------------------------------------возвращает наибольшее и наименьшее значение из массива (дана строка с пробелами)
+
+
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min(...args)
+     
+//     }
+//   }         --- (...args) -  используется, когда нам неизвестно, сколько элементов будет в задаче/ Math.min - ищет самое маленькое значение массива
+
+
+// или 
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min.apply( null, args )
+     
+//     }
+//   }
+
+
+//5.
+
+// for (var i = 0; i < text.length; i++)
+// Это просто перебирает каждую букву в текстовом параметре.
+
+// var code = text.toUpperCase().charCodeAt(i)
+// Это начинает определять положение буквы в алфавите. В основном это говорит: "для каждого персонажа вtext, вернуть его код символа charCodeAt(i).
+
+// if (code > 64 && code < 91) {
+// result += (code - 64) + " "
+// };
+// Как и сказано в первом комментарии, коды символов для прописных букв от A до Z начинаются с 65 (A) и заканчиваются на 90 (Z). Следовательно, нам нужны коды только для букв от A до Z (например, нас не волнуют коды для пробелов или кавычек). Поскольку мы хотим, чтобы A было равно 1, мы должны вычесть 64 из кода символа (65–64 = 1, аналогично для B, 66–64 = 2 и т. Д.).
+
+// result += (code - 64) + " "
+// Эта часть добавляет наши отфильтрованные буквенные коды к результату и добавляет пространство для удобства чтения. Он делает это для каждого кода символа, отфильтрованногоif заявление.
+
+// return result.slice(0, result.length-1);  или return result.trim()/ убрать последний и первый пробел   - замена введенного текса цифрами алфавита
+
+
+//5.
+// function abbrevName(name){
+  
+//     var initials = name.match(/\b(\w)/g);
+//     return initials.join('.').toUpperCase();
+  
+//   }------------------------ Из ФИО оставляет инициалы, а .join('.') разделяет их точкой , .toUpperCase() - капс; 
