@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+
+
     <title>
         Алмаз Монах
     </title>
@@ -13,9 +14,11 @@
             margin: 0px;
             background-color: beige;
         }
-        .pad{
+
+        .pad {
             padding: 25px;
         }
+
         .header {
             background-color: lightblue;
             color: black;
@@ -23,6 +26,7 @@
             font-size: 36pt;
             text-align: center;
         }
+
         .welcome {
             background-color: gray;
             color: white;
@@ -37,17 +41,18 @@
             float: left;
             background-color: beige;
         }
+
         .divs {
             margin: 5px;
             width: 25%;
             float: left;
             border: 4px solid lightblue;
-            background-color:white;
+            background-color: white;
             text-align: center;
         }
-
     </style>
 </head>
+
 <body>
     <div class="header pad"> Обнаружение алмаза Монах</div>
 
@@ -55,35 +60,47 @@
         <p class="welcome">Похищенный алмаз найден в Сибири!</p>
     </div>
 
-    
+
 
     <div class="main-text pad">
-        <p>Профессор Бейрстоун и доктор Дэй сделали сенсационное открытие. <br/>
-            В даекой Сибирской пещере они  обнаружили алмаз Монах. <br/>
+        <p>Профессор Бейрстоун и доктор Дэй сделали сенсационное открытие. <br />
+            В даекой Сибирской пещере они обнаружили алмаз Монах. <br />
             Алмаз унюхал Эрнест, собака профессора Бейрстоуна.
         </p>
         <p>
-            Камень был похищен три года назад из дома Волковых. <br/>
-            Основными подозреваемыми в краже стали братья Бонд. <br/>
-            Команда считает, что похитители спрятали алмаз. <br/>
-            Они прислали снимок из своего лагеря.
+            Камень был похищен три года назад из дома Волковых. <br />
+            Основными подозреваемыми в краже стали братья Бонд. <br />
+            Команда считает, что похитители спрятали алмаз. <br />
+            Они прислали снимок из своего лагеря. <br>
+            <a href="/Ernest300/Coding.html"> Ссылка ...</a>
         </p>
-        <img src="https://getcodingkids.com/wp-content/uploads/2016/05/TeamPhoto.jpg" alt="The team" style="height: 150px;">
+        <img src="https://getcodingkids.com/wp-content/uploads/2016/05/TeamPhoto.jpg" alt="The team"
+            style="height: 150px;">
     </div>
 
-    <div class="divs pad">
-        <img src="https://getcodingkids.com/wp-content/uploads/2016/05/diamond.jpg" alt="Diammond" style="width: 150px;">
+    <div class="divs pad" onclick="alert('Зеленый')">
+        <img src="https://getcodingkids.com/wp-content/uploads/2016/05/diamond.jpg" alt="Diammond"
+            style="width: 150px;">
         <p style="text-align: center;">Алмаз Монах</p>
     </div>
 
     <div class="divs pad" style="text-align: center;">
-        Факты об алмазе <br/>
-        Карат: 300 <br/>
-        Цвет: зеленый <br/>
+        Факты об алмазе <br />
+        Карат: 300 <br />
+        Цвет: зеленый <br />
         Цена: более £10 миллионов
     </div>
-     
-     
-</body>
-</html>
 
+    <script>
+        function checkAccess() {
+            alert('Ограниченный доступ!');
+            return 'Только для членов группы!';
+        }
+
+        var webPage = checkAccess();
+        alert(webPage);
+    </script>
+
+</body>
+
+</html>
