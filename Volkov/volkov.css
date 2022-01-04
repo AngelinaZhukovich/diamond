@@ -1,6 +1,6 @@
-
-
-input[type="button"]{
-    background-color: pink;
+body{
+    margin-left: 45%;
+    margin-top: 12%;
+    background-color: lightblue;
     
-}
+};
